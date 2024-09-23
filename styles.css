@@ -37,12 +37,11 @@ html, body {
 }
 
 nav {
-  position: fixed;
-  isolation: isolate;
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 9;
 }
-
 .nav__header {
   padding: 1rem;
   display: flex;

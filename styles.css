@@ -40,7 +40,7 @@ html, body {
 
 
 nav {
-  position: sticky;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 9;
@@ -68,10 +68,12 @@ nav {
 
 .header__container {
   max-width: var(--max-width);
+  margin-top: 10vh;
   margin: auto;
+  margin-top: 10vh;
     position: fixed;
   overflow-y: scroll; /* Ensure vertical scrolling */
-  height: auto;
+  height: 90vh;
   scroll-behavior: smooth;
   padding: 8rem 1rem 2rem;
   padding-bottom: 0rem;

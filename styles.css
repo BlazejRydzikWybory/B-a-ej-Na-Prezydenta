@@ -73,3 +73,10 @@ p{
   align-items: center;
   flex-direction: column;
 }
+
+.footer-img{
+  width: 20%;
+}
+.footer-img-sign{
+  width: 30%;
+}

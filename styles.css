@@ -26,18 +26,21 @@ a {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-    touch-action: manipulation;
-  overscroll-behavior: contain;
-}
-html, body {
+  -webkit-touch-callout: none;
   -webkit-overflow-scrolling: touch;
-  overflow-x: hidden;
-    height: 100%;
+  touch-action: auto; /* Ensure this is set */
+    font-family: "Poppins", sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+  height: auto; /* Change from 100% to auto */
+  scroll-behavior: smooth; /* Optional: for smoother scrolling */
+}
+
+
 nav {
-  position: sticky;
+  position: relative;
   top: 0;
   width: 100%;
   z-index: 9;

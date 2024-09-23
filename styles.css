@@ -1,201 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-:root {
-  --primary-color: #C1121F;
-  --text-dark: #333333;
-  --text-light: #767268;
-  --white: #ffffff;
-  --max-width: 1200px;
-  --header-font: "Bebas Neue", sans-serif;
+body{
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  color: #333333;
 }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-img {
-  display: flex;
+.title-container{
+  height: 10vh;
   width: 100%;
-}
-
-a {
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-body {
-  -webkit-touch-callout: none;
-  hieght: 100vh;
-    font-family: "Poppins", sans-serif;
-}
-
-html, body {
-  overflow-x: hidden;
-  height: auto; /* Change from 100% to auto */
-  scroll-behavior: smooth; /* Optional: for smoother scrolling */
-}
-
-
-nav {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 9;
-}
-.nav__header {
-  padding: 1rem;
+  background-color: #C1121F;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: var(--primary-color);
 }
-
-.nav__logo a {
-  font-size: 1.75rem;
-  font-weight: 400;
-  font-family: var(--header-font);
-  color: var(--white);
-}
-
-.nav__menu__btn {
-  font-size: 1.5rem;
-  color: var(--white);
-  cursor: pointer;
-}
-
-.header__container {
-  max-width: var(--max-width);
-  margin-top: 10vh;
-  margin: auto;
-  margin-top: 10vh;
-    position: fixed;
-  height: 90vh;
-  scroll-behavior: smooth;
-  padding: 8rem 1rem 2rem;
-  padding-bottom: 0rem;
-  display: grid;
-  gap: 2rem;
-  overflow-x: hidden;
-  z-index: 1;
-  height: 140vh;
-}
-
-.header__content h1 {
-  margin-bottom: 1rem;
-  font-size: 5rem;
-  font-weight: 400;
-  font-family: var(--header-font);
-  color: var(--text-dark);
-  line-height: 5.5rem;
-  text-align: center;
-}
-
-.header__content h2 {
+.title{
+  color: white;
   font-size: 2rem;
-  font-weight: 400;
-  font-family: var(--header-font);
-  color: var(--text-dark);
-  line-height: 2.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  margin-left: 4%;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+a {
+  margin-left: 1rem;
+  height: 2rem;
+  width: 2rem;
+}
+.title span{
+  margin-left: -2%;
+}
+img{
+  height: 1.8rem;
+  width: 1.8rem;
+  color: white;
+}
+h1{
+  font-size: 3rem;
   text-align: center;
 }
-
-.header__content h1 span {
-  color: var(--primary-color);
+h1 span{
+  color: #C1121F;
 }
-
-.header__content p {
+h2{
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 2vh;
+  padding: 0 10%;
+}
+h3{
+  font-size: 1.5rem;
+  padding: 0 10%;
+  margin-bottom: 0;
+}
+p{
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 0 10%;
   margin-bottom: 2rem;
   line-height: 1.7rem;
-  text-align: center;
 }
-.rudy-container{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+.support {
   width: 100%;
+  background-color: #C1121F;
+  height: 20vh;
+  border-top-left-radius: 5px;
+  border-top-right-radius:5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
 }
-.rudy-img {
-  position: static;
-  height: auto;
-  width: 40%;
-  
-}
-
-@media screen and (max-width: 485px) {
-  .header__container {
-    height: 160vh;
-    position: static;
-  }
-  .rudy-img {
-    bottom: -60vh;
-  }
-}
-
-@media screen and (max-width: 385px) {
-  .header__container {
-    height: 185vh;
-    position: static;
-  }
-  .rudy-img {
-    bottom: -85vh;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  nav {
-    position: relative;
-    padding: 2rem 0;
-    max-width: var(--max-width);
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-
-  .nav__header {
-    background-color: transparent;
-  }
-
-  .nav__logo a {
-    color: var(--text-dark);
-  }
-
-  .nav__logo a span {
-    color: var(--primary-color);
-  }
-
-  .nav__menu__btn {
-    display: none;
-  }
-
-  .header__container {
-    padding-block: 2rem;
-    padding-bottom: 0rem;
-    grid-template-columns: repeat(2, 1fr);
-    position: relative;
-    height: auto;
-  }
-
-  .header__content :is(h1, h2, p) {
-    text-align: left;
-  }
-
-  .rudy-img {
-    bottom: 0;
-    right: 0;
-    position: absolute;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .header__content form {
-    flex-direction: row;
-  }
-
-  .header__content button {
-    width: fit-content;
-  }
+.el {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

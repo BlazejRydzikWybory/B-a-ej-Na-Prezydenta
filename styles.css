@@ -27,6 +27,12 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+    touch-action: manipulation;
+  overscroll-behavior: contain;
+}
+html, body {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
 }
 
 nav {

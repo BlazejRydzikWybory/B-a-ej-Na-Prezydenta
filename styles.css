@@ -27,8 +27,7 @@ a {
 
 body {
   -webkit-touch-callout: none;
-  -webkit-overflow-scrolling: touch;
-  touch-action: auto; /* Ensure this is set */
+  hieght: 100vh;
     font-family: "Poppins", sans-serif;
 }
 
